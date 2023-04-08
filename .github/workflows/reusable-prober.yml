@@ -271,7 +271,7 @@ jobs:
           curl -Lo root.json ${{ inputs.tuf_root_url }}
           for i in {1..5}
           do
-            if cosign initialize --mirror=https://tuf-root-staging.storage.googleapis.com --root=root.json; then
+            if cosign initialize --mirror=https://tuf-repo-cdn.sigstage.dev --root=root.json; then
               echo "Successfully initialized" && exit 0
             else
               echo "Failed to initialize" && sleep 10
