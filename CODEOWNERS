@@ -1,3 +1,5 @@
 * @sigstore/sigstore-oncall
 
 /.github/ @sigstore/dep-maintainers
+go.* @sigstore/dep-maintainers
+Dockerfile @sigstore/dep-maintainers
